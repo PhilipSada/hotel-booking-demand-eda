@@ -6,7 +6,7 @@ This project uses python together with libraries such as Pandas, Matplotlib and 
 Questions answered during the exploratory data analysis:
 1. Which country do most of the guests come from?
 2. How long do guests stay in the hotels?
-3. Which market segment has higher bookings?
+3. Which market segment has the most bookings?
 4. How many bookings were cancelled?
 5. Which month has the highest number of cancellations?
 
@@ -108,7 +108,7 @@ pyo.plot(fig)
 
 **Observation:** In the case of city hotels, guests tend to prefer staying for 1-4 nights. While, for resort hotels, stays of 1-4 nights are common, but 7-night stays are notably popular as well.
 
-### Which market segment has higher bookings?
+### Which market segment has the most bookings?
 ```python
 segments=data['market_segment'].value_counts()
 segments
@@ -140,9 +140,9 @@ print(f'Total City Hotel Booking Cancelled: {city_cancellation} .'
 
 ```
 **Result**
-Total Booking Cancelled: 44199 .
-Total Resort Hotel Booking Cancelled: 11120 .
-Total City Hotel Booking Cancelled: 33079 .
+- Total Booking Cancelled: 44199.
+- Total Resort Hotel Booking Cancelled: 11120.
+- Total City Hotel Booking Cancelled: 33079.
 
 ### Which month has the highest number of cancellations?
 ```python
